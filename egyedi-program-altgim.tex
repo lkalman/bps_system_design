@@ -1,0 +1,274 @@
+\documentclass[10pt,openright,twoside]{book}
+% LK: added twoside, headheight, headsep
+\usepackage[paperwidth=142mm,paperheight=197mm,top=24mm,bottom=22mm,inner=18mm,outer=22mm,headheight=22pt]{geometry}
+\usepackage[cam,a4,center]{crop}
+% \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+%% LK: \usepackage[magyar]{babel}
+\usepackage{polyglossia}
+\setdefaultlanguage{magyar}
+\usepackage{aref}
+\usepackage{needspace}
+\usepackage{setspace}
+\widowpenalty=300
+\clubpenalty=300
+\setlength\parskip{0pt}
+\raggedbottom
+\widowpenalty=10000
+\clubpenalty=10000
+
+\frenchspacing 
+
+\usepackage{leading}
+\leading{13pt}
+
+
+%% :LK
+
+\usepackage{verbatim}
+\usepackage{booktabs}
+%\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+
+\usepackage{fontspec}
+
+%% :LK
+\usepackage[raggedright]{titlesec}
+%% LK:
+\titleformat{\chapter}[display]%
+            {\chapterfont}{\thechapter. fejezet}%
+            {0.5 ex}{\vspace{1ex}}
+\titleformat{\section}{\sectionfont}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\subsectionfont}{}{the}{\MakeUppercase}
+\titleformat{\subsubsection}
+{\subsubsectionfont}{}{}{}
+\titleformat{\paragraph}[runin]{\paragraphfont}{}{}{}
+%% subsection alatt nincs mar szamozas es nem is kerul a tartalomjegyzekbe
+%% UpperCase lesz a subsection es sima bold a subsubsection
+\setcounter{secnumdepth}{1}
+\setcounter{tocdepth}{1}
+
+%% :LK
+\usepackage{caption}
+\DeclareCaptionLabelFormat{swappedTable}{#2. táblázat}
+\captionsetup[table]{labelformat=swappedTable}
+\DeclareCaptionLabelFormat{swappedFigure}{#2. ábra}
+\captionsetup[figure]{labelformat=swappedFigure}
+\setlength{\parskip}{0pt}
+\raggedbottom
+\usepackage{fancyhdr}
+%% LK:
+% \fancyhead[LE]{\thepage\qquad{\small\leftmark}}
+% \fancyhead[RO]{{\small\leftmark}\qquad\thepage}
+% \fancyhead[LO,RE]{}
+\fancyhead{}                              % clear header fields
+\fancyhead[RO,LE]{{\submainfont\thepage}} % right odd, left even
+% \fancyhead[CE]{\small\textsc{\thechapter. fejezet: \rightmark}}
+\fancyhead[CE]{\small\textsc{\thechapter. fejezet}}
+% \fancyhead[CO]{\small\textsc{\thesection. \rightmark}}
+\fancyhead[CO]{\small\textsc{\rightmark}}
+
+% Redefine cleardoublepage to get empty headers on blank pages:
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}
+\vspace*{\fill}
+% \begin{center}
+% This page intentionally contains only this sentence.
+% \end{center}
+% \vspace{\fill}
+\thispagestyle{empty}
+\newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+\renewcommand{\chaptermark}[1]{\markright{#1}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+%\renewcommand{\subsectionmark}[1]{}
+%% :LK
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+
+
+\usepackage{longtable}
+\usepackage{array}
+\usepackage[justification=centering]{caption}
+\usepackage{url}
+\usepackage[nottoc,numbib]{tocbibind}
+% \DeclareUnicodeCharacter{2212}{-}
+% heylyseglista tablazat miatt
+\usepackage{graphicx}
+\usepackage{lscape}
+% LK:
+\bibliographystyle{magyar}
+% :LK
+%% ezzel rakunk be ketoldalas kepeket. Mindig kettesevel
+%% rakunk be kepeket, balra es jobbra, teljes oldalra, fejlec nelkul.
+\newcommand{\ketoldaltkep}[2]{
+    \cleardoublepage
+    \begin{figure*}
+        \centering
+        \vspace*{-2.5cm}
+        \makebox[\textwidth]{
+        \includegraphics[width=\paperwidth]{#1}
+        }
+    \end{figure*}
+    
+    \begin{figure*}
+        \centering
+        \vspace*{-2.5cm}
+        \makebox[\textwidth]{
+        \includegraphics[width=\paperwidth]{#2}
+        }
+    \end{figure*}
+    \clearpage
+
+}
+
+
+% HP:
+\usepackage{csquotes}
+% :HP
+% LK:
+% \usepackage[style=authortitle,backend=bibtex]{biblatex}
+% \bibliography{references}
+% :LK
+% :HP
+
+%% LK:
+\setmainfont[Mapping=tex-text]{Minion Pro}
+% \setmainfont[
+%   Mapping=tex-text,
+%   BoldFont={Minion Pro Bold}, 
+%   ItalicFont={Minion Pro Italic},
+%   BoldItalicFont={Minion Pro Bold Italic}
+% ]{Minion Pro}
+\newfontfamily\submainfont[Mapping=tex-text,Scale=0.9]{Minion Pro}
+\newfontfamily\chapterfont[Mapping=tex-text,Scale=2.0]{Myriad Pro Bold}
+\newfontfamily\sectionfont[Mapping=tex-text,Scale=1.4]{Myriad Pro Bold}
+\newfontfamily\subsectionfont[Mapping=tex-text]{Myriad Pro}
+\newfontfamily\subsubsectionfont[Mapping=tex-text]{Myriad Pro Bold}
+\newfontfamily\paragraphfont[Mapping=tex-text,Scale=0.9]{Myriad Pro Bold}
+% :LK
+
+% HP:
+% I. resz, 1. fejezet
+% LK:
+%% \renewcommand*{\chapterformat}{%
+%%   \thechapter\autodot~%
+%% }
+%% \renewcommand*{\partformat}{%
+%%   \thepart\autodot~\partname:%
+%% }
+% :LK
+
+
+% LK:
+\usepackage{natbib}
+% :LK
+
+% pandoc specific 
+% Make links footnotes instead of hotlinks:
+\usepackage{hyperref}
+\DeclareRobustCommand{\href}[2]{#2\footnote{\url{#1}}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black,
+    anchorcolor=black,
+    citecolor=black,
+    filecolor=black,
+    pdftitle={BPS modell},
+    bookmarks=true,
+%    pdfpagemode=FullScreen,
+}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+  \usepackage{graphicx,grffile}
+  \makeatletter
+  \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+  \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+  \makeatother
+  % Scale images if necessary, so that they will not overflow the page
+  % margins by default, and it is still possible to overwrite the defaults
+  % using explicit options in \includegraphics[width, height, ...]{}
+  \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+\begin{document}
+% LK:
+\let\apageref\pageref
+\let\autocite\citep
+% :LK
+
+\title{A Budapest School egyedi pedagógia program}
+\author{Budapest School \\
+Általános Iskola és Gimnázium\\ 
+tanárai}
+\maketitle
+
+\pagestyle{empty}
+
+% \input{chapters/titlepage}
+\input{quotes}
+
+\tableofcontents
+\mainmatter
+\pagestyle{fancy}
+\chapter{Az iskola célja}
+\input{mi-az-a-bps.tex}
+\input{mi-a-celunk.tex}
+\input{tarsadalom-vs-egyeni.tex}
+\input{alapelvek.tex}
+\input{emberkep.tex}
+\input{kapcsolodasok.tex}
+\chapter{A tanulás megközelítése}
+\input{pedagogiai-pszichologiai-hatter.tex}
+\input{pedagogiai-modszerek.tex}
+\input{kiemelt-fejlesztesi-teruletek.tex}
+\input{eselyegyenloseg.tex}
+\input{kiemelt-figyelmet-igenylo-gyerekek.tex}
+\chapter{A tanulási élmény}
+\input{szemelyreszabott-iskola.tex}
+\input{sajat-celok.tex}
+\input{mentoralas.tex}
+\input{tanulasi-szerzodes.tex}
+\input{tanulo-kozosseg.tex}
+\input{tanari-szerepek.tex}
+\input{modulok.tex}
+\input{portfolio.tex}
+\input{tanev-ritmusa.tex}
+\input{visszajelzes-ertekeles.tex}
+\chapter{Hogyan szervezzük az iskolát}
+\input{biztonsagos_kornyezet.tex}
+\input{szociokracia.tex}
+\input{governance.tex}
+\input{konfliktusok-kezelese.tex}
+\input{minosegbiztositas.tex}
+\input{tanarok.tex}
+\input{felvetel-atvetel.tex}
+\chapter{Helyi tanterv}
+\input{nat-celjai.tex}
+\input{tantargyak.tex}
+\input{bizonyitvany-evfolyamok.tex}
+\input{tankonyvek.tex}
+\input{erettsegi.tex}
+\input{szemelyisegfejlesztes.tex}
+\input{mindennapos-testmozgas.tex}
+\input{elsosegely.tex}
+\input{onkentesszolgalat.tex}
+\input{nemzetisegek.tex}
+\input{kornyezeti-neveles.tex}
+\input{tantargyak-altgim.tex}
+\chapter{Működési feltételek}
+\input{pedagogusok.tex}
+\input{epuletek.tex}
+\backmatter
+% LK:
+% \printbibliography
+\bibliography{references}
+% :LK
+\end{document}

@@ -1,0 +1,785 @@
+\documentclass{article}
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL build.05.11/miben-terunk-el.tex   Mon May 11 21:46:53 2020
+%DIF ADD build/miben-terunk-el.tex         Mon May 11 23:21:34 2020
+\usepackage{xr}
+\usepackage{hyperref}
+\usepackage[magyar]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{polyglossia}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black,
+    anchorcolor=black,
+    citecolor=black,
+    filecolor=black,
+    pdftitle={BPS modell},
+    bookmarks=true,
+    pdfpagemode=FullScreen,
+}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+  \usepackage{graphicx,grffile}
+  \makeatletter
+  \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+  \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+  \makeatother
+  % Scale images if necessary, so that they will not overflow the page
+  % margins by default, and it is still possible to overwrite the defaults
+  % using explicit options in \includegraphics[width, height, ...]{}
+  \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+  \usepackage{longtable,booktabs}
+
+\setdefaultlanguage{magyar}
+\externaldocument{egyedi_program}
+\renewcommand{\thesection}{}
+\makeatletter
+\renewcommand\thesection{}
+\renewcommand\thesubsection{\@arabic\c@subsection}
+\makeatother
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFaddtex}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdeltex}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF HYPERREF PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{\texorpdfstring{\DIFaddtex{#1}}{#1}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{\texorpdfstring{\DIFdeltex{#1}}{}} %DIF PREAMBLE
+\newcommand{\DIFscaledelfig}{0.5}
+%DIF HIGHLIGHTGRAPHICS PREAMBLE %DIF PREAMBLE
+\RequirePackage{settobox} %DIF PREAMBLE
+\RequirePackage{letltxmacro} %DIF PREAMBLE
+\newsavebox{\DIFdelgraphicsbox} %DIF PREAMBLE
+\newlength{\DIFdelgraphicswidth} %DIF PREAMBLE
+\newlength{\DIFdelgraphicsheight} %DIF PREAMBLE
+% store original definition of \includegraphics %DIF PREAMBLE
+\LetLtxMacro{\DIFOincludegraphics}{\includegraphics} %DIF PREAMBLE
+\newcommand{\DIFaddincludegraphics}[2][]{{\color{blue}\fbox{\DIFOincludegraphics[#1]{#2}}}} %DIF PREAMBLE
+\newcommand{\DIFdelincludegraphics}[2][]{% %DIF PREAMBLE
+\sbox{\DIFdelgraphicsbox}{\DIFOincludegraphics[#1]{#2}}% %DIF PREAMBLE
+\settoboxwidth{\DIFdelgraphicswidth}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\settoboxtotalheight{\DIFdelgraphicsheight}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\scalebox{\DIFscaledelfig}{% %DIF PREAMBLE
+\parbox[b]{\DIFdelgraphicswidth}{\usebox{\DIFdelgraphicsbox}\\[-\baselineskip] \rule{\DIFdelgraphicswidth}{0em}}\llap{\resizebox{\DIFdelgraphicswidth}{\DIFdelgraphicsheight}{% %DIF PREAMBLE
+\setlength{\unitlength}{\DIFdelgraphicswidth}% %DIF PREAMBLE
+\begin{picture}(1,1)% %DIF PREAMBLE
+\thicklines\linethickness{2pt} %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\framebox(1,1){}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\line( 1,1){1}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,1){\line(1,-1){1}}}% %DIF PREAMBLE
+\end{picture}% %DIF PREAMBLE
+}\hspace*{3pt}}} %DIF PREAMBLE
+} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbegin}{\DIFaddbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddend}{\DIFaddend} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbegin}{\DIFdelbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelend}{\DIFdelend} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbegin}{\DIFOaddbegin \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbegin}{\DIFOdelbegin \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbeginFL}{\DIFaddbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddendFL}{\DIFaddendFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbeginFL}{\DIFdelbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelendFL}{\DIFdelendFL} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbeginFL}{\DIFOaddbeginFL \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbeginFL}{\DIFOdelbeginFL \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document} 
+\noindent
+Emberi Erőforrások Minisztériuma \\
+részére
+\vspace{0.75cm}
+
+\hypertarget{elteresek-reszletes-bemutatasa}{%
+\section{Eltérések részletes
+bemutatása}\label{elteresek-reszletes-bemutatasa}}
+
+Alábbiakban részletes bemutatjuk, hogy a 2011. évi CXC. törvény 9. § (8)
+értelmében mennyiben és miben tér el a Budapest School programja a
+Nemzeti alaptantervben (NAT) és az oktatásért felelős miniszter által
+közzétett kerettantervekben leírtaktól és más jogszabályokban,
+szabályozókban foglaltaktól.
+
+\hypertarget{neveles-oktatas-tartalmi-kerdesei}{%
+\subsection{Nevelés-oktatás tartalmi
+kérdései}\label{neveles-oktatas-tartalmi-kerdesei}}
+
+Az iskola programja a Nemzeti alaptanterv tantárgyait veszi alapul,
+tehát nem tér el a Nat-ban és az oktatásért felelős miniszter által
+kiadott kerettantervben foglalt \emph{tantárgyi struktúrától}.
+
+Az is belátható, hogy a helyi tanterv a Nemzeti alaptanterv és az
+oktatásért felelős miniszter által közzétett kerettantervekben
+meghatározott \emph{ismeretanyagot teljes mértékben tartalmazza}, hiszen
+azok tanulási eredményeit száz százalékban átvette.
+
+Óraszámokban nincs eltérés a helyi tanterv és a Nat óraszám ajánlásai
+között, kivéve hogy
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  1-4. évfolyamon megjelenik a kötelező \emph{Mentoridő} heti egy
+  órában;
+\item
+  5-12. évfolyamon a \emph{Közösségi nevelés (osztályfőnöki)} helyébe
+  heti egy órában a mentoridő lép;
+\end{enumerate}
+
+Minden gyerek egy órát hetente a mentorával tölt\DIFaddbegin \DIFadd{, amikor a mentor a
+gyerek számára egyéni, minőségi figyelmet ad}\DIFaddend . A mentor ilyenkor a
+gyereket segíti a saját céljainak megfogalmazásában és hogy legyen
+\DIFdelbegin \DIFdel{a
+gyereknek }\DIFdelend lehetősége reflektálni a saját fejlődésére. Ez az óra a gyerekek és a
+mentorok számára kötelező foglalkozás.
+
+\DIFdelbegin \DIFdel{A mentoridő egyéni vagy maximum 12 fős csoportos foglalkozás. }\DIFdelend Ez azt is eredményezi, hogy az iskola átlagban magasabb tanár/gyerek
+aránnyal tudja csak elvégezni az egyedi pedagógia programban előírtakat
+mert nem csak tanítókra és szaktanárokra van szüksége, hanem mentorokra
+is.
+
+\hypertarget{a-vezetesi-modell}{%
+\subsection{A vezetési modell}\label{a-vezetesi-modell}}
+
+Az intézmény vezetését intézményvezető látja el, amely szerepkör
+ellátása elsősorban a tanügyigazgatási rendszer követelményeinek való
+megfelelés miatt szükséges. A Budapest Schoolban az intézményvezető nem
+köteles órát, foglalkozást tartani.
+
+Az iskola belső működéséből és szervezeti kultúrájából következik, hogy
+iskolában intézményvezető-helyettes megbízása nem szükséges. Az
+intézményvezető munkája a gyerekek létszámával nem növekszik, feladatai
+elvégzésében segítik más tanárok, megbízott szakértők, és a fenntartó
+is.
+
+\DIFdelbegin \DIFdel{Amennyiben az intézményvezető akadályoztatva van, vagy munkaköre
+megürült, a fenntartó jogosult olyan személy ideiglenes megbízására, aki
+pedagógus végzettséggel és legalább 2 éves, igazolt vezetői
+tapasztalattal rendelkezik. A fenntartónak ebben az esetben azonnal ki
+kell nevezni az ideiglenes intézményvezetőt, biztosítva, hogy az iskola
+egy nap se lehessen kinevezett vezető nélkül.
+}%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend \hypertarget{a-neveles--es-oktatasszervezesi-modszerek}{%
+\subsection{A nevelés- és oktatásszervezési
+módszerek}\label{a-neveles--es-oktatasszervezesi-modszerek}}
+
+\hypertarget{mentor}{%
+\subsubsection{Mentor}\label{mentor}}
+
+Osztályfőnök feladatkörét az adott gyerek tekintetében a mentor látja
+el.
+
+\hypertarget{folyamatos-tervezes-megvalositas-meres-fejlesztes}{%
+\subsubsection{Folyamatos tervezés, megvalósítás, mérés,
+fejlesztés}\label{folyamatos-tervezes-megvalositas-meres-fejlesztes}}
+
+A program a tanárok autonómiájára kívánja bízni, hogy a gyerekek
+tanulási céljai, képességei alapján trimeszterenként alakítsák ki
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  a foglalkozások rendjét és idejét;
+\item
+  a csoportbontások rendszerét, a konkrétan kialakításra került
+  csoportok összetételét, a bennük résztvevő tanulók nevét;
+\item
+  az aktív tanulási alapelvek szerint szerveződő, több tantárgy,
+  tanulási terület ismereteinek integrálását igénylő témákat,
+  jelenségeket; feldolgozó tanórák, foglalkozások, témanapok, témahetek,
+  tematikus hetek és projektek alkalmazását;ű
+\item
+  20/2012. (VIII. 31.) EMMI 12.§ (1-3) pontjaiban említett, a rendelet
+  szerint a helyi tanterv kompentenciájába tartozó,
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    a gyerekek, az egyes évfolyamok, ezen belül az egyes osztályok,
+    valamint az osztályokon belüli csoportok tanítási óráit;
+  \item
+    különböző évfolyamok, különböző osztályok tanulóiból álló csoportok
+    kialakításának rendjét;
+  \item
+    a kötelező, kötelezően választandó és szabadon választható
+    foglalkozások rendszerét;
+  \item
+    azon kötelező tanítási foglalkozásokat, amelyeken egy adott osztály
+    valamennyi tanulója köteles részt venni;
+  \item
+    azon kötelező tanítási foglalkozásokat, amelyeken a gyerekeknek a
+    választásra felkínált tantárgyak közül kötelezően választva, az a
+    tanárok által megadott óraszámban kell résztvenni.
+  \end{enumerate}
+\item
+  a tantárgyi blokkosítások, és tömbösítések rendjét;
+\end{enumerate}
+
+\hypertarget{ertekeles}{%
+\subsubsection{Értékelés}\label{ertekeles}}
+
+\hypertarget{erdemjegyek-helyett-strukturalt-szoveges-visszajelzes-es-tanulasi-eredmenyek-elszamolasa}{%
+\paragraph{Érdemjegyek helyett struktúrált szöveges visszajelzés és
+tanulási eredmények
+elszámolása}\label{erdemjegyek-helyett-strukturalt-szoveges-visszajelzes-es-tanulasi-eredmenyek-elszamolasa}}
+
+A BPS iskolában az érdemjegyek helyett a gyerekek folyamatosan kapnak
+visszajelzést teljesítményükről és előrehaladásukról:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Tanulási egységek, modulok, foglalkozásák, szakaszok, feladatok,
+  projektek végén értékelő a tanárok értékelő táblázatokat (angolul
+  rubric) alkalmaznak. Az értékelő táblázatban szerepelnek az értékelés
+  szempontjai és szempontonkénti szintek, rövid leírásokkal. A
+  táblázatok formája minden visszajelzés esetén (értsd
+  foglalkozásonként, trimeszterenként, célonként) változtatható. Az
+  értékelőtáblázat tekinthető struktúrált szöveges értékelésnek.
+\item
+  A gyerekek folyamatosan „gyűjtik'' a tanulási eredményeket, ami
+  folyamatosan visszajelzést ad nekik arról, hogy az évfolyamhoz tartozó
+  tantárgyi követelmények hány százalékánál tartanak.
+\end{enumerate}
+
+Ez alapján tanév közben nemcsak a gyerek, hanem tanárai és családja is
+mindig nyomon követheti, hogy hol tart a gyerek és mit kell tenni azért,
+hogy a tanév végére elérje a az évfolyamhoz tartozó követelményeket.
+
+\hypertarget{osztalyozas}{%
+\paragraph{Osztályozás}\label{osztalyozas}}
+
+A gyerekek portfóliója alapján egyértelműen megállapítható a
+teljesítésre került tanulási eredmények. Egy tanulási eredményt vagy
+teljesített a gyerek, vagy nem, részben teljesíteni nem lehetséges.
+
+Osztályzatot félévkor és év végén kapnak a gyerekek valamennyi
+tantárgyból, ahogy az Nkt. előírja. Az osztályozás egyedi módja a
+következő:
+
+\begin{itemize}
+\tightlist
+\item
+  az elért tanulási eredmények száma: a gyerek által adott
+  félévben/évben teljesített tanulási eredményeinek számossága
+\item
+  a félévre/évre számított összes tanulási eredmény: a Nat. adott
+  tantárgyhoz rögzített valamennyi tanulási eredményének száma, osztva
+  az adott időszak számosságával (tehát pl. etika tantárgyban a NAT 1-4.
+  osztályra 50 tanulási eredményt ír elő, az egy félévre számított
+  összes tanulási eredmény 7)
+\item
+  az elért tanulási eredmények számát elosztjuk a félévre/évre számított
+  összes tanulási eredmény számával, és megszorozzuk 100-zal
+\item
+  a kapott százalékos mutatót az alábbi táblázat alapján osztályzattá
+  alakítjuk:
+\end{itemize}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Teljesítmény & Osztályzat\tabularnewline
+\midrule
+\endhead
+0 - 40\% & 1 (elégtelen)\tabularnewline
+41 - 50\% & 2 (elégséges)\tabularnewline
+51 - 60\% & 3 (közepes)\tabularnewline
+61 - 70\% & 4 (jó)\tabularnewline
+71 - 100\% & 5 (példás)\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{magatartas-es-szorgalom-szoveges-ertekelese}{%
+\paragraph{Magatartás és szorgalom szöveges
+értékelése}\label{magatartas-es-szorgalom-szoveges-ertekelese}}
+
+Az Ntk. 54. § (1) előírja a tanuló magatartásának és szorgalmának
+értékelését és minősítését. Ezt a gyerek mentora trimeszterenként
+szövegesen vagy értékelő táblázatokban végzi el. Tehát nem az
+osztályfőnök végzi és nem érdemjegyekkel és osztályzatokkal.
+
+\hypertarget{a-minosegpolitika-a-minoseggondozas-rendszere}{%
+\subsection{A minőségpolitika, a minőséggondozás
+rendszere}\label{a-minosegpolitika-a-minoseggondozas-rendszere}}
+
+Az iskola és fenntartója a teljes szervezet minőségfejlesztését
+PDCA-ciklusként (plan - tervezés, do -- cselekvés, check -- ellenőrzés,
+act - beavatkozás) végzi. A gyerekek élményét leginkább befolyásoló
+foglalkozások tervezése trimeszterenként történik, a többi esetben a
+jogszabályok által megengedett legrövidebb csiklust alkalmazza az
+iskola. Ellenőrzésként több metrikát vesz figyelembe a folyamat, de
+mindenképp figyelembe kell venni a következőket:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  A szülő, a gyerek és a tanár közötti saját célokat megfogalmazó hármas
+  megállapodások időben megszülettek, nincs olyan gyerek, akinek nincs
+  elfogadott saját tanulási célja. Indikátor: elkészült szerződések
+  száma.
+\item
+  A modulok végén a portfóliók bővülnek, és azok tartalma a
+  tantárgyakhoz kapcsolódik. Indikátor: a portfólió elemeinek száma és
+  kapcsolhatósága.
+\item
+  A tanulási eredményekre vonatkozó megkötések időben teljesülnek.
+  Indikátor: elért tanulási eredmények száma gyerekekre bontva.
+\item
+  A szülők biztonságban érzik gyereküket, és eleget tudnak arról, hogy
+  mit tanulnak. Indikátor: kérdőíves vizsgálat alapján.
+\item
+  A tanárok hatékonynak tartják a munkájukat. Indikátor: kérdőíves
+  felmérés alapján.
+\item
+  A gyerekek úgy érzik, folyamatosan tanulnak, támogatva vannak, vannak
+  kihívásaik. Indikátor: kérdőíves felmérés alapján.
+\end{enumerate}
+
+\hypertarget{a-tanulo-heti-kotelezo-oraszama}{%
+\subsection{A tanuló heti kötelező
+óraszáma}\label{a-tanulo-heti-kotelezo-oraszama}}
+
+A NAT óraszámait tartjuk, a jogszabályokban előírtak szerint.
+
+\hypertarget{a-pedagogus-vegzettseg-es--szakkepzettseg}{%
+\subsection{A pedagógus végzettség és
+-szakképzettség}\label{a-pedagogus-vegzettseg-es--szakkepzettseg}}
+
+A BPS iskola egyedisége, hogy mentorok pedagógus munkakörben alkalmaz. A
+program a mentorok esetén kötelezően előírja, hogy csak olyan felnőtt
+alkalmazható mentorként, aki a köznevelési jogszabályok által pedagógus
+munkakörben alkalmazható és elvégezte a BPS saját 30 órás
+mentorképzését.
+
+\hypertarget{a-mukodeshez-szukseges-feltetelek}{%
+\subsection{A működéshez szükséges
+feltételek}\label{a-mukodeshez-szukseges-feltetelek}}
+
+\DIFdelbegin %DIFDELCMD < \hypertarget{tobb-telephely-egy-intezmeny-nincs-tagintezmeny}{%
+%DIFDELCMD < \subsubsection{Több telephely, egy intézmény, nincs
+%DIFDELCMD < tagintézmény}%DIFDELCMD < \label{tobb-telephely-egy-intezmeny-nincs-tagintezmeny}%%%
+}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \hypertarget{helyisegek}{%
+\subsection{Helyiségek}\label{helyisegek}}
+\DIFaddend 
+
+A \DIFdelbegin \DIFdel{Budapest School több telephellyel rendelkezik. Minden telephely egy
+intézményhez tartozik, az egységes iskola működéséhez nincs szükség
+tagintézmények létrehozására (azaz a BPS nem hoz létre tagintézményeket,
+kizárólag telephelyeket), tekintettel arra, hogy az iskolák szervezeti
+irányítása a BPS modell és azt leképező szoftverrendszer segítségével
+megoldható anélkül, hogy az egyes helyszíneket telephelyek helyett
+tagintézményként lenne szükséges működtetni.
+}%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{A telephelyek kialakíthatók nem nevelési, oktatási ingatlanokban.
+}%DIFDELCMD < 
+
+%DIFDELCMD < \hypertarget{helyisegek}{%
+%DIFDELCMD < \subsubsection{Helyiségek}%DIFDELCMD < \label{helyisegek}%%%
+}
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{A }\DIFdelend telephelyeken található helyiségeket az iskola a 20/2012.(VIII.31.)
+EMMI rendelet 2.számú mellékletében meghatározott felhatalmazás alapján
+alakítja ki: \emph{Az eltérő pedagógiai elveket tartalmazó nevelési
+program az eszköz- és felszerelési jegyzéktől eltérően határozhatja meg
+a nevelőmunka eszköz és felszerelési feltételeit.}
+
+BPS modellben részletezett strukturális, szervezeti és tanulásszervezési
+módok miatt az iskola az iskolában az alábbi helyiségek megléte
+szükséges és elégséges:
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+\begin{minipage}[b]{0.13\columnwidth}\raggedright
+\textbf{helyiség megnevezése}\strut
+\end{minipage} & \begin{minipage}[b]{0.26\columnwidth}\raggedright
+\textbf{mennyiségi mutató}\strut
+\end{minipage} & \begin{minipage}[b]{0.51\columnwidth}\raggedright
+\textbf{megjegyzés}\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+tanterem (1)\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+16 gyerekenként egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+1,5 nm / gyerek előírás figyelembevétel\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+laboratóriumok és szertárak (2)\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+iskolánként egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+laboratóriumi tevékenység végzésére alkalmas létesítmény üzemeltetőjével
+kötött megállapodással is teljesíthető\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+tornaterem\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+iskolánként egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+kiváltható szerződéssel\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+tornaszoba\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+székhelyen, telephelyeken egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+csak ha ha a székhelynek v.telephelynek nincs saját tornaterme és akkor
+is kiváltható szerződéssel\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+sportudvar\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+székhelyen, telephelyeken egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+kiváltható szerződéssel, vagy helyettesíthető alkalmas szabad
+területtel\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+sportszertár (4)\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+székhelyen, telephelyeken egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+tornateremhez kapcsolódóan (kiváltható szerződéssel)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+általános szertár (4)\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+székhelyen, telephelyeken egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+tornateremhez kapcsolódóan (kiváltható szerződéssel)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+iskolatitkári iroda (5)\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+iskolánként egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+teljesen külön épületben, irodában is kialakítható\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+nevelőtestületi szoba\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+iskolánként (telephelyenként) egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+könyvtár\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+iskolánként egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+nyilvános könyvtár elláthatja a funkcót, megállapodás alapján\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+orvosi szoba\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+iskolánként egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+amennyiben külső egészségügyi intézményben a gyerekek ellátása
+megoldható, nem kötelező; lehet ideiglenesen kialakított\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+ebédlő (6)\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+székhelyen, telephelyeken egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+gyerek- és felnőttétkező közös helyiségben; tanteremmel közös helységben
+is kialakítható, de egyidőben csak egy funkció\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+főzőkonyha\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+székhelyen, telephelyeken egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+ha helyben főznek\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+melegítőkonyha (7)\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+székhelyen, telephelyeken egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+ha nem helyben főznek, de helyben étkeznek\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+tálaló-mosogató\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+székhelyen, telephelyeken egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+ha nem helyben főznek, de helyben étkeznek; melegítőkonyhával közös
+helyiségben is kialakítható\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+szárazáru raktár\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+székhelyen, telephelyeken egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+ha helyben főznek\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+földesáru raktár\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+székhelyen, telephelyeken egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+ha helyben főznek\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+éléskamra\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+székhelyen, telephelyeken egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+ha helyben főznek\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+élelmiszerhulladék-tároló (8)\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+székhelyen, telephelyeken egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+helyben étkeznek; nem kell külön helységben, ha biztonságosan
+eltávolítható a hulladék\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+személyzeti WC\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+székhelyen, telephelyeken egy\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+ha fülkés, különálló WC kerül kialakításra, akkor a gyerek WC-t és
+személyzeti WC-t nem kell megkülönbözteti\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.13\columnwidth}\raggedright
+gyerek WC\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+székhelyen, telephelyeken a gyereklétszám figyelembevételével\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+ha fülkés, különálló WC kerül kialakításra, akkor nem kell elkülöníteni
+a fiú és lány WC-t\strut
+\end{minipage}\tabularnewline
+\DIFaddbegin \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\DIFadd{mozgássérült WC}\strut
+\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
+\DIFadd{a mozgássérült gyereklétszám figyelembevételével}\strut
+\end{minipage} & \begin{minipage}[t]{0.51\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\DIFaddend \bottomrule
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Tanterem esetén az iskola azért nem osztályonként, hanem gyereklétszám
+  arányában határozza meg a szükséges tantermek számát, mert
+  osztálybontások esetén egy osztályra két tanterem jutna. Ezen felül a
+  BPS iskolákban az osztályok gyerekszáma tipikus esetben 10 fő alatti,
+  így a tantermek számosságának meghatározására a gyerekek száma a
+  megfelelőbb mérőszám.
+\item
+  Amennyiben a 9-12. évfolyam tanulási eredményeinek eléréséhez
+  szükséges laboratóriumi tevékenységek az iskolában található
+  eszközökkel és termekben nem végezhetők el, az iskola és a fenntartó
+  is kötelességet vállal arra, hogy a tanulási eredmény eléréséhez
+  szükséges tárgyi feltételeket megállapodás, szerződés alapján
+  biztosítsa.
+\item
+  A székhely és a telephelyek általánostól eltérően nagyobb száma és
+  kisebb mérete más típusú intézmény vezetést tesz szükségessé, melynek
+  része az egyes feladatellátási helyek rendszeres felkeresése. Az
+  intézményvezető tanórát, foglalkozást nem, illetve minimális számban
+  tart, így nem szükséges folyamatos jelenléte az adott székhelyen,
+  telephelyen.
+\item
+  Az egyértelműség okán célszerű rögzíteni, hogy a sportszertár és
+  általános szertár osztja a tornaterem sorsát.
+\item
+  A székhely és a telephelyek általánostól eltérően nagyobb száma és
+  kisebb mérete miatt az adminisztráció működtetése célszerűen és
+  hatékonyan megoldható a székhelyen kívül.
+\item
+  Technikailag megoldható hordozható hideg-meleg kézmosó alkalmazásával
+  (népegészségügyi szerv által megerősített megoldás).
+\item
+  A melegítőkonyha funkciója az ebédlő részeként is kialakítható, ezen
+  termek funkciója nem zárja ki az egy helyiségben történő kialakítást -
+  különös tekintettel az Intézmény feladatellátási helyeinek
+  általánostól eltérően nagyobb számára és kisebb méretére.
+\item
+  852/2004/EK rendelet alapján az élelmiszer-hulladékot, a nem ehető
+  melléktermékeket és egyéb hulladékot a felgyülemlésük elkerülése
+  érdekében a lehető leggyorsabban el kell távolítani azokból a
+  helyiségekből, amelyekben élelmiszer található. A rendelet nem írja
+  elő, hogy ezt külön helységben kell tárolni.
+\end{enumerate}
+
+A 20/2012. (VIII. 31.) EMMI rendelettől néhány terem esetén oly módon
+kívánunk eltérni, hogy az adott terem ne legyen kötelező a
+telephelyeken:
+
+\begin{itemize}
+\item
+  \textbf{Aula}: Kevés gyereket befogadó épületben a legnagyobb tanterem
+  általában elegendő a közösségi programokhoz. Nagyobb épületekben pedig
+  a rendelet is kiválthatónak határozza meg.
+\item
+  \textbf{Csoportterem}: A tantermek csoportteremként is funkcionálnak.
+  Tekintettel arra, hogy az iskolában az osztályok gyerekszáma tipikus
+  esetben 10 fő alatti, és az egyes foglalkozásokra létrejött
+  csoportokban sok esetben több osztály tanulói is részt vesznek, a
+  tanulásra kialakított terek megkülönböztetése (tan-, csoport-,
+  szakterem) nem szükséges.
+\item
+  \textbf{Egyéb raktár}: Amennyiben nem helyben étkeznek, a tanulói
+  létszám feladatellátási helyenként alacsony mértéke okán nem szükséges
+  egyéb helyiség kialakítása, közelebbről meg nem határozott tárgyak
+  számára.
+\item
+  \textbf{Felnőtt étkező}: Gyermekvédelmi szempontból nem megoldható,
+  hogy a gyerekek tanár jelenléte nélkül tartózkodjanak külön
+  helyiségben az étkezés idejére. Ezért a felnőttek együtt étkeznek a
+  gyerekkel.
+\item
+  \textbf{Intézményvezetői iroda}: A székhely és a telephelyek
+  általánostól eltérően nagyobb száma és kisebb mérete más típusú
+  intézmény vezetést tesz szükségessé, melynek része az egyes
+  feladatellátási helyek rendszeres felkeresése. Az intézményvezető
+  tanórát, foglalkozást nem, illetve minimális számban tart, így nem
+  szükséges folyamatos jelenléte az adott székhelyen, telephelyen. Az
+  iskolatitkári iroda olyan módon kerül kialakításra, hogy az az
+  intézményvezető számára is használható.
+\item
+  \textbf{Iskolapszichológusi szoba}: Az iskolapszichológusi
+  tevékenységek megoldhatók a tantermekben, különös tekintettel arra,
+  hogy egész napos iskolaként működik az iskola.
+\item
+  \textbf{Logopédiai foglalkoztató, egyéni fejlesztő szoba}: A
+  logopédiai foglalkozások megoldhatók a tantermekben, különös
+  tekintettel arra, hogy egész napos iskolaként működik az iskola.
+\item
+  \textbf{Porta}: Funkciója, a gyerekek biztonságának biztosítása,
+  szabályzatokkal, beléptető rendszerekkel megoldható.
+\item
+  \textbf{Szaktanterem a hozzá tartozó szertárral}: A szaktantermek
+  funkciói a legtöbb esetben a tanteremben is megvalósíthatóak. Így
+  számítástechnikai terem, társadalomtudományi szaktanterem, művészeti
+  nevelés szaktanterem, technikai szaktanterem és gyakorló tanterem
+  eszközigénye mobil eszközökkel is megoldható, úgy mint pl. laptop,
+  rajztábla, satu, elektromos zongora. A természettudományi szaktanterem
+  funkcióit pedig a szerződött laboratóriumokban elérhető a gyerekek
+  számára. Amennyiben az adott tantárgyhoz, tantárgycsoporthoz tartozó
+  tanulási eredmény az Intézményben található eszközökkel és termekben
+  nem érhető el, az Intézmény és a fenntartó is kötelességet vállal
+  arra, hogy a tanulási eredmény eléréséhez szükséges tárgyi
+  feltételeket megállapodás, szerződés alapján biztosítsa.
+\item
+  \textbf{Személyzeti öltöző} és \textbf{személyzeti mosdó-zuhanyzó}: Az
+  intézmény a tanárokon és óraadókon kívül állandó egyéb alkalmazottat
+  egy feladatellátási helyszínen nem foglalkoztat. Az egyéb
+  alkalmazottak (pl. karbantartó, takarító, kisegítők) ideiglenes, a
+  feladatuk ellátásához szükséges ideig tartózkodnak az intézmény
+  területén, ezért ilyen terem kialakítása szükségtelen.
+\item
+  \textbf{Teakonyha}: Tálaló-mosogató, ebédlő, és melegítőkonyha mellett
+  külön teakonyha terem létesítése nem célszerű, az említett három
+  ellátja a teakonyha funkcióját Intézményünkben, tekintettel az egy
+  feladatellátási helyen egyszerre jelen lévő tanárok alacsony számára.
+\item
+  \textbf{Technikai alkalmazotti mosdó-zuhanyzó, WC helyiség}: Az
+  intézmény a tanárokon és óraadókon kívül állandó egyéb alkalmazottat
+  egy feladatellátási helyszínen nem foglalkoztat. Az egyéb
+  alkalmazottak (pl. karbantartó, takarító, kisegítők) ideiglenes, a
+  feladatuk ellátásához szükséges ideig tartózkodnak az intézmény
+  területén, a tanári WC-t használata számukra elégséges.
+\end{itemize}
+
+\DIFdelbegin %DIFDELCMD < \hypertarget{helyisegek-butorzata-es-egyeb-berendezesi-targyai}{%
+%DIFDELCMD < \subsubsection{Helyiségek bútorzata és egyéb berendezési
+%DIFDELCMD < tárgyai}%DIFDELCMD < \label{helyisegek-butorzata-es-egyeb-berendezesi-targyai}%%%
+}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \hypertarget{helyisegek-butorzata-es-egyeb-berendezesi-targyai}{%
+\subsection{Helyiségek bútorzata és egyéb berendezési
+tárgyai}\label{helyisegek-butorzata-es-egyeb-berendezesi-targyai}}
+\DIFaddend 
+
+A Budapest School telephelyein az alábbi feltételek megléte szükséges és
+elégséges:
+
+\begin{itemize}
+\tightlist
+\item
+  fenntartónak stabil szélessávú internethozzáférést kell biztosítania
+  minden telephelyen;
+\item
+  minden tanteremben minden órán elérhetőnek kell lennie legalább egy
+  internethez kötött számítógépnek vagy tabletnek;
+\item
+  tanulói asztalok, székek a gyerekek számának megfelelően;
+\item
+  eszköztároló szekrény;
+\item
+  tábla vagy flipchart legalább három különböző színű tollal;
+\item
+  szeméttároló.
+\end{itemize}
+
+Amennyiben a tanároknak többletigénye merül fel, akkor a szervezeti és
+működési szabályzatban lefektett módon tudják az iskola és a fenntartó
+segítségét kérni.
+
+
+
+\vspace{0.75cm}
+\noindent
+Tisztelettel,
+
+\vspace{0.75cm}
+\noindent
+\begin{center}
+      \begin{tabular}{p{8cm}}
+            \begin{center}
+                  \hrulefill \\
+                  \textbf{MiSulink Nonprofit Kft.} \\
+                  fenntartó\\
+                  képviseletében: Halácsy Péter ügyvezető \\
+            \end{center}
+      \end{tabular}
+\end{center}
+
+\end{document}
