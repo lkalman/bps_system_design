@@ -39,34 +39,160 @@ működésüket a fenntartó monitorozza. A tanév ritmusát, a
 trimeszteralapú tervezés és a félévalapú iskolarendszer-szintű
 visszajelzés illeszkedését a következő táblázat mutatja.
 
-\begin{longtable}[]{@{}ll@{}}
-\toprule
-időszak & Tevékenység\tabularnewline
-\midrule
+\newcolumntype{L}{>{\begin{minipage}[t]{.2\textwidth}\strut\raggedright\hangindent=1em}l<{\strut\end{minipage}}}
+\newcolumntype{M}{>{\begin{minipage}[t]{.6\textwidth}\strut\raggedright\hangindent=1em}l<{\strut\end{minipage}}}
+\begin{longtable}[]{LM}
+\renewcommand{\arraystretch}{1.5}
+% \toprule
+% \hline
+\textbf{Időszak} & \textbf{Tevékenység}\tabularnewline
+% \midrule
+\hline
 \endhead
-Szeptember & közösségépítés\tabularnewline
-& saját célok meghatározása\tabularnewline
-& modulok kialakítása és meghirdetése\tabularnewline
-Október & tanulás, alkotás\tabularnewline
-November & tanulás, alkotás\tabularnewline
-December & portfólió frissítése\tabularnewline
-& reflexiók\tabularnewline
-& visszajelzések\tabularnewline
-& célok felülvizsgálata\tabularnewline
-& modulok változtatása igény esetén\tabularnewline
-Január & tanulás, alkotás\tabularnewline
-& féléves értékelés kiadása\tabularnewline
-Február & tanulás, alkotás\tabularnewline
-Március & portfólió frissítése\tabularnewline
-& reflexiók\tabularnewline
-& visszajelzések\tabularnewline
-& célok felülvizsgálata\tabularnewline
-& modulok változtatása igény esetén\tabularnewline
-Április & tanulás, alkotás\tabularnewline
-Május & tanulás, alkotás\tabularnewline
-Fél június & évzárás, értékelés, bizonyítványok\tabularnewline
-\bottomrule
+szeptember & {közösségépítés\\
+saját célok meghatározása\\
+modulok kialakítása és meghirdetése}\tabularnewline
+\hline
+október & tanulás, alkotás\tabularnewline
+\hline
+november & tanulás, alkotás\tabularnewline
+\hline
+december & {portfólió frissítése\\
+reflexiók\\
+visszajelzések\\
+célok felülvizsgálata\\
+modulok változtatása igény esetén}\tabularnewline
+\hline
+január & {tanulás, alkotás\\
+féléves értékelés kiadása}\tabularnewline
+\hline
+február & tanulás, alkotás\tabularnewline
+\hline
+március & {portfólió frissítése\\
+reflexiók\\
+visszajelzések\\
+célok felülvizsgálata\\
+modulok változtatása igény esetén}\tabularnewline
+\hline
+április & tanulás, alkotás\tabularnewline
+\hline
+május & tanulás, alkotás\tabularnewline
+\hline
+fél június & évzárás, értékelés, bizonyítványok\tabularnewline
+% \bottomrule
 \end{longtable}
+
+%% \newcolumntype{L}{|>{\begin{minipage}[t]{.3\textwidth}\strut\raggedright}l<{\strut\end{minipage}}}
+%% \newcolumntype{M}{|>{\begin{minipage}[t]{.4\textwidth}\strut\raggedright}l<{\strut\end{minipage}}|}
+%% \begin{longtable}[]{LM}
+%% % \toprule
+%% \hline
+%% \textbf{Időszak} & \textbf{Tevékenység}\tabularnewline
+%% % \midrule
+%% \hline
+%% \endhead
+%% szeptember & {közösségépítés\\
+%% saját célok meghatározása\\
+%% modulok kialakítása és meghirdetése}\tabularnewline
+%% \hline
+%% október & tanulás, alkotás\tabularnewline
+%% \hline
+%% november & tanulás, alkotás\tabularnewline
+%% \hline
+%% december & {portfólió frissítése\\
+%% reflexiók\\
+%% visszajelzések\\
+%% célok felülvizsgálata\\
+%% modulok változtatása igény esetén}\tabularnewline
+%% \hline
+%% január & {tanulás, alkotás\\
+%% féléves értékelés kiadása}\tabularnewline
+%% \hline
+%% február & tanulás, alkotás\tabularnewline
+%% \hline
+%% március & {portfólió frissítése\\
+%% reflexiók\\
+%% visszajelzések\\
+%% célok felülvizsgálata\\
+%% modulok változtatása igény esetén}\tabularnewline
+%% \hline
+%% április & tanulás, alkotás\tabularnewline
+%% \hline
+%% május & tanulás, alkotás\tabularnewline
+%% \hline
+%% fél június & évzárás, értékelés, bizonyítványok\tabularnewline
+%% \bottomrule
+%% \end{longtable}
+
+%% \newcolumntype{L}{>{\begin{minipage}[t]{.3\textwidth}\strut\raggedright}l<{\strut\end{minipage}}}
+%% \newcolumntype{M}{>{\begin{minipage}[t]{.4\textwidth}\strut\raggedright}l<{\strut\end{minipage}}}
+%% \begin{longtable}[]{LM}
+%% % \toprule
+%% \textbf{Időszak} & \textbf{Tevékenység}\tabularnewline
+%% \midrule
+%% \midrule
+%% \endhead
+%% szeptember & {közösségépítés\\
+%% saját célok meghatározása\\
+%% modulok kialakítása és meghirdetése}\tabularnewline
+%% \hline
+%% október & tanulás, alkotás\tabularnewline
+%% \hline
+%% november & tanulás, alkotás\tabularnewline
+%% \hline
+%% december & {portfólió frissítése\\
+%% reflexiók\\
+%% visszajelzések\\
+%% célok felülvizsgálata\\
+%% modulok változtatása igény esetén}\tabularnewline
+%% \hline
+%% január & {tanulás, alkotás\\
+%% féléves értékelés kiadása}\tabularnewline
+%% \hline
+%% február & tanulás, alkotás\tabularnewline
+%% \hline
+%% március & {portfólió frissítése\\
+%% reflexiók\\
+%% visszajelzések\\
+%% célok felülvizsgálata\\
+%% modulok változtatása igény esetén}\tabularnewline
+%% \hline
+%% április & tanulás, alkotás\tabularnewline
+%% \hline
+%% május & tanulás, alkotás\tabularnewline
+%% \hline
+%% fél június & évzárás, értékelés, bizonyítványok\tabularnewline
+%% \bottomrule
+%% \end{longtable}
+
+%% \begin{longtable}[]{@{}ll@{}}
+%% \toprule
+%% Időszak & Tevékenység\tabularnewline
+%% \midrule
+%% \endhead
+%% szeptember & közösségépítés\tabularnewline
+%% & saját célok meghatározása\tabularnewline
+%% & modulok kialakítása és meghirdetése\tabularnewline
+%% október & tanulás, alkotás\tabularnewline
+%% november & tanulás, alkotás\tabularnewline
+%% december & portfólió frissítése\tabularnewline
+%% & reflexiók\tabularnewline
+%% & visszajelzések\tabularnewline
+%% & célok felülvizsgálata\tabularnewline
+%% & modulok változtatása igény esetén\tabularnewline
+%% január & tanulás, alkotás\tabularnewline
+%% & féléves értékelés kiadása\tabularnewline
+%% február & tanulás, alkotás\tabularnewline
+%% március & portfólió frissítése\tabularnewline
+%% & reflexiók\tabularnewline
+%% & visszajelzések\tabularnewline
+%% & célok felülvizsgálata\tabularnewline
+%% & modulok változtatása igény esetén\tabularnewline
+%% április & tanulás, alkotás\tabularnewline
+%% május & tanulás, alkotás\tabularnewline
+%% fél június & évzárás, értékelés, bizonyítványok\tabularnewline
+%% \bottomrule
+%% \end{longtable}
 
 \hypertarget{feleves-es-evvegi-ertekeles}{%
 \subsection{Féléves és évvégi
