@@ -1,4 +1,5 @@
 egyedi-program-altgim.pdf: egyedi-program-altgim.tex \
+    eloszo.tex \
     mi-az-a-bps.tex \
     mi-a-celunk.tex \
     tarsadalom-vs-egyeni.tex \
@@ -23,10 +24,14 @@ egyedi-program-altgim.pdf: egyedi-program-altgim.tex \
     biztonsagos_kornyezet.tex \
     szociokracia.tex \
     governance.tex \
+    operator.tex \
     konfliktusok-kezelese.tex \
     minosegbiztositas.tex \
     tanarok.tex \
     felvetel-atvetel.tex \
+    hianyzasok.tex \
+    ki-viheti-el-a-gyereket.tex \
+    sarga-narancs-piros-riasztas.tex \
     nat-celjai.tex \
     tantargyak.tex \
     bizonyitvany-evfolyamok.tex \

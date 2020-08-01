@@ -64,7 +64,7 @@
 \fancyhead{}                              % clear header fields
 \fancyhead[RO,LE]{{\submainfont\thepage}} % right odd, left even
 % \fancyhead[CE]{\small\textsc{\thechapter. fejezet: \rightmark}}
-\fancyhead[CE]{\small\textsc{\thechapter. fejezet}}
+\fancyhead[CE]{\small\textsc{\ifnum\thechapter=0{Előszó}\else{\thechapter. fejezet}\fi}}
 % \fancyhead[CO]{\small\textsc{\thesection. \rightmark}}
 \fancyhead[CO]{\small\textsc{\rightmark}}
 
@@ -214,6 +214,10 @@
 \tableofcontents
 \mainmatter
 \pagestyle{fancy}
+\chapter*{Előszó}
+\addcontentsline{toc}{chapter}{Előszó}
+\vspace*{-2ex}
+\input{eloszo}
 \chapter{Az iskola célja}
 \input{mi-az-a-bps.tex}
 \input{mi-a-celunk.tex}
@@ -260,7 +264,9 @@
 \input{mindennapos-testmozgas.tex}
 \input{elsosegely.tex}
 \input{onkentesszolgalat.tex}
+\vspace*{-.8ex}
 \input{nemzetisegek.tex}
+\vspace*{-.8ex}
 \input{kornyezeti-neveles.tex}
 % \input{tantargyak-altgim.tex}
 \chapter{Működési feltételek}
