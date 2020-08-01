@@ -1,5 +1,7 @@
 egyedi-program-altgim.pdf: egyedi-program-altgim.tex \
+    cimnegyed.tex \
     eloszo.tex \
+    koszonet.tex \
     mi-az-a-bps.tex \
     mi-a-celunk.tex \
     tarsadalom-vs-egyeni.tex \

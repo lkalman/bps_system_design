@@ -64,7 +64,7 @@
 \fancyhead{}                              % clear header fields
 \fancyhead[RO,LE]{{\submainfont\thepage}} % right odd, left even
 % \fancyhead[CE]{\small\textsc{\thechapter. fejezet: \rightmark}}
-\fancyhead[CE]{\small\textsc{\ifnum\thechapter=0{Előszó}\else{\thechapter. fejezet}\fi}}
+\fancyhead[CE]{\small\textsc{\ifnum\thechapter=0{\leftmark}\else{\thechapter. fejezet}\fi}}
 % \fancyhead[CO]{\small\textsc{\thesection. \rightmark}}
 \fancyhead[CO]{\small\textsc{\rightmark}}
 
@@ -199,6 +199,10 @@
   % using explicit options in \includegraphics[width, height, ...]{}
   \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\chapterfont}
+\setlength{\cftaftertoctitleskip}{\baselineskip}
+
 \begin{document}
 % LK:
 \let\apageref\pageref
@@ -207,17 +211,33 @@
 
 
 \pagestyle{empty}
+\input{cimnegyed}
 
-\input{titlepage}
+% \input{titlepage}
 \input{quotes}
 
-\tableofcontents
-\mainmatter
+% LK:
+% \mainmatter
+% :LK
 \pagestyle{fancy}
+
+\cleardoublepage
+\markboth{Tartalomjegyzék}{Tartalomjegyzék}
+\tableofcontents
+
 \chapter*{Előszó}
+\markboth{Előszó}{Előszó}
 \addcontentsline{toc}{chapter}{Előszó}
-\vspace*{-2ex}
 \input{eloszo}
+\newpage
+\noindent
+{\sectionfont Köszönetnyilvánítás}
+\markboth{Köszönetnyilvánítás}{Köszönetnyilvánítás}
+
+\vskip\baselineskip
+\noindent
+\input{koszonet}
+
 \chapter{Az iskola célja}
 \input{mi-az-a-bps.tex}
 \input{mi-a-celunk.tex}
@@ -242,7 +262,7 @@
 \input{portfolio.tex}
 \input{tanev-ritmusa.tex}
 \input{visszajelzes-ertekeles.tex}
-\chapter{Hogyan szervezzük az iskolát}
+\chapter{Így szervezzük az iskolát}
 \input{biztonsagos_kornyezet.tex}
 \input{szociokracia.tex}
 \input{governance.tex}
